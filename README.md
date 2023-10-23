@@ -3,9 +3,9 @@ IHS_GitHubPages readme.md
 
 <a href="">Default page</a>
 
-<a href="/">Default 2 page</a>
-
 <a href="index.html">Index page</a>
+
+<a href="home_index.html">Home Index page</a>
 
 # GitHub Pages info
 default page = index.html, index.md, or README.md 
