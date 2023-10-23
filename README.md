@@ -1,7 +1,7 @@
 # IHS_GitHubPages
 IHS_GitHubPages readme.md
 
-<a href="">Default page</a>
+<a href="/">Default page</a>
 
 <a href="index.html">Index page</a>
 
