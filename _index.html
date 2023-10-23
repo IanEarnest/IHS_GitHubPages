@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Hello World HTML5 Canvas</title>
+	<link rel="stylesheet" href="styles.css">
 	<script>
 
 		function html5Canvas() {
@@ -14,6 +15,7 @@
 
 			context.strokeRect(0,0,175,50);
 			context.font="30px Times New Roman";
+			context.fillStyle = "#ff0000"; // red
 			context.fillText("Hello World!", x, y);
 		}
 	</script>

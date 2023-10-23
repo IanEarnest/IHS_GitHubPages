@@ -1,10 +1,11 @@
 # IHS_GitHubPages
 IHS_GitHubPages readme.md
-</br>
-<a href="IHS_GitHubPages/">Default page</a>
-</br>
-<a href="IHS_GitHubPages/index.html">Index page</a>
-</br>
+
+<a href="">Default page</a>
+
+<a href="/">Default 2 page</a>
+
+<a href="index.html">Index page</a>
 
 # GitHub Pages info
 default page = index.html, index.md, or README.md 
