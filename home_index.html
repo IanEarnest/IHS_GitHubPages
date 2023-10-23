@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Hello World HTML5 Canvas</title>
 	<link rel="stylesheet" href="styles.css">
+	<script src="scripts.js"></script>
 	<script>
-
+		// example Canvas on HTML5
+		// Display text - "Hello World" in 2D, red
 		function html5Canvas() {
 			var canvas = document.getElementById("helloCanvas");
 			var context = canvas.getContext("2d");
@@ -20,15 +22,26 @@
 		}
 	</script>
 </head>
-<h1>Hello world...</h1>
-<a href="./">Default page</a>
-</br>
-<a href="./index">Index page</a>
-</br>
-<a href="./home_index">Home Index page</a>
-</br>
-
 <body onload="html5Canvas()">
+	<h1>Hello world...</h1>
+	<p>
+		HTML5 Web page with CSS and JS
+	</p>
+	<h1>Links</h1>
+	<a href="./">Default page</a> or 
+	<a href="./index">Index page</a>
+	</br>
+	<a href="./home_index"><b>Home Index page</b></a>
+	</br>
+
+	<h1>Canvas</h1>
 	<canvas id="helloCanvas" width="175" height="50"></canvas>
+	<h1>JS</h1>
+	<button type="button" onclick="GetDateAndDisplay()">
+		Show Date and Time
+	</button>
+	<p id="showDate">
+		0000
+	</p>
 </body>
 </html>
