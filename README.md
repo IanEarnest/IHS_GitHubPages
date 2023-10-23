@@ -1,9 +1,14 @@
 # IHS_GitHubPages
 IHS_GitHubPages readme.md
 </br>
-<a href="/">Index1</a>
+<a href="IHS_GitHubPages/">Default page</a>
 </br>
-<a href="/index.html">Index2</a>
+<a href="IHS_GitHubPages/index.html">Index page</a>
+</br>
+
+# GitHub Pages info
+default page = index.html, index.md, or README.md 
+
 # Examples
 Stuff
 ```SQL
