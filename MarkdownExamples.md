@@ -10,13 +10,6 @@ ToC
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Line
 <br/>
 
-<button type="button" onclick="GetDateAndDisplay()">
-		Show Date and Time
-</button>
-<p id="showDate">
-	0000
-</p>
-
 
 # Tips
 1. You can use HTML

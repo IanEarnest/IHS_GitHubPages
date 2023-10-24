@@ -5,6 +5,22 @@ This is the readme.md for https://github.com/IanEarnest/IHS_GitHubPages
 <br/>
 This project is used for links to my portfolio and works.
 <br/>
+<br/>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<br/>
+
+
+<script src="scripts.js"></script>
+<button type="button" onclick="GetDateAndDisplay()">
+		Show Date and Time
+</button>
+<p id="showDate">
+	0000
+</p>
 
 # Links
 <a href="./"><b>Default page</b></a> or <a href="./index">Index page</a>
