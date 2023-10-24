@@ -1,5 +1,7 @@
 # IHS_GitHubPages
-(updated 24/10/23)
+<script src="scripts.js"></script>
+{{ page.title }}
+(updated 24/10/23 02:36)
 <br/>
 This is the readme.md for https://github.com/IanEarnest/IHS_GitHubPages
 <br/>
@@ -7,16 +9,16 @@ This project is used for links to my portfolio and works.
 <br/>
 <br/>
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
+onclick="document.getElementById('inlinedatetime').innerHTML = Date()">
+	Show inline date time
+</button>
+<p id="inlinedatetime">
+	0000
+</p>
 <br/>
 
-
-<script src="scripts.js"></script>
 <button type="button" onclick="GetDateAndDisplay()">
-		Show Date and Time
+	Show Date and Time
 </button>
 <p id="showDate">
 	0000
