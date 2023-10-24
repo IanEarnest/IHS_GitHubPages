@@ -50,3 +50,45 @@ LIMIT 10
 
 ## Line = ---
 ---
+
+
+# Other Markdown things
+## Jeckll templates
+Page title - {{ page.title }}
+
+## JS in Markdown
+### Reference file and display button
+```js
+<script src="scripts.js"></script>
+<button type="button" onclick="GetDateAndDisplay()">
+	Show Date and Time
+</button>
+<p id="showDate">
+	0000
+</p>
+```
+<script src="scripts.js"></script>
+<button type="button" onclick="GetDateAndDisplay()">
+	Show Date and Time
+</button>
+<p id="showDate">
+	0000
+</p>
+
+### Inline JS
+```js
+<button type="button"
+onclick="document.getElementById('inlinedatetime').innerHTML = Date()">
+	Show inline date time
+</button>
+<p id="inlinedatetime">
+	0000
+</p>
+```
+<button type="button"
+onclick="document.getElementById('inlinedatetime').innerHTML = Date()">
+	Show inline date time
+</button>
+<p id="inlinedatetime">
+	0000
+</p>

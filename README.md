@@ -1,6 +1,4 @@
 # IHS_GitHubPages
-<script src="scripts.js"></script>
-{{ page.title }}
 (updated 24/10/23 02:36)
 <br/>
 This is the readme.md for https://github.com/IanEarnest/IHS_GitHubPages
@@ -8,21 +6,6 @@ This is the readme.md for https://github.com/IanEarnest/IHS_GitHubPages
 This project is used for links to my portfolio and works.
 <br/>
 <br/>
-<button type="button"
-onclick="document.getElementById('inlinedatetime').innerHTML = Date()">
-	Show inline date time
-</button>
-<p id="inlinedatetime">
-	0000
-</p>
-<br/>
-
-<button type="button" onclick="GetDateAndDisplay()">
-	Show Date and Time
-</button>
-<p id="showDate">
-	0000
-</p>
 
 # Links
 <a href="./"><b>Default page</b></a> or <a href="./index">Index page</a>
@@ -43,3 +26,6 @@ onclick="document.getElementById('inlinedatetime').innerHTML = Date()">
 
 # GitHub Pages info
 default page = index.html, index.md, or README.md 
+
+# Jeckll templates
+Page title - {{ page.title }}
