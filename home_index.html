@@ -28,7 +28,7 @@
 		HTML5 Web page with CSS and JS
 	</p>
 	<h1>Links</h1>
-	<a href="./">Default page</a> or 
+	<a href="./">Default page</a> or
 	<a href="./index">Index page</a>
 	</br>
 	<a href="./home_index"><b>Home Index page</b></a>
@@ -43,5 +43,16 @@
 	<p id="showDate">
 		0000
 	</p>
+	<h1>HTML example - Dialog</h1>
+	<button onclick="dialog.showModal();">Show the dialog</button>
+	<dialog id="htmldialog">
+		<button onclick="dialog.close();" autofocus>Close</button>
+		<p>This modal dialog has a groovy backdrop!</p>
+		<!--
+		<form method="dialog">
+			<button>OK</button>
+		</form>
+		-->
+	</dialog>
 </body>
 </html>
