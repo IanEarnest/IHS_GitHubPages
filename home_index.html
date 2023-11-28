@@ -4,6 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Hello World HTML5 Canvas</title>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		#htmlDialogModal {
+			z-index: 10;
+			margin-top: 25%;
+			background: green;
+			border: none;
+			border-radius: 1rem;
+		}
+
+		#htmlDialogModal::backdrop {
+			background-color: hsl(210, 100%, 50%, 0.25);
+		}
+
+		#htmlDialog {
+			z-index: 10;
+			margin-top: 10px;
+			background: lightblue;
+			border: none;
+			border-radius: 1rem;
+		}
+
+		#htmlDialog::backdrop {
+			background-color: hsl(210, 100%, 50%, 0.25);
+		}
+	</style>
 	<script src="scripts.js"></script>
 	<script>
 		// example Canvas on HTML5
@@ -36,6 +61,7 @@
 
 	<h1>Canvas</h1>
 	<canvas id="helloCanvas" width="175" height="50"></canvas>
+	
 	<h1>JS</h1>
 	<button type="button" onclick="GetDateAndDisplay()">
 		Show Date and Time
@@ -43,16 +69,74 @@
 	<p id="showDate">
 		0000
 	</p>
-	<h1>HTML example - Dialog</h1>
-	<button onclick="dialog.showModal();">Show the dialog</button>
-	<dialog id="htmldialog">
-		<button onclick="dialog.close();" autofocus>Close</button>
-		<p>This modal dialog has a groovy backdrop!</p>
+
+
+	<h1>HTML Example - Dialog/Modal</h1>
+	<h5>https://blog.webdevsimplified.com/2023-04/html-dialog/</h5>
+	<!-- Shows small box under content - can interact with page-->
+	<button id="dialogOpen">Show the Dialog</button>
+	<br />
+	<!-- Shows page wide box infront of content - cannot interact with page, needs to be closed-->
+	<button id="dialogModalOpen">Show the Dialog Modal</button>
+
+	<!-- uses dialog::backdrop and dialog styles-->
+	<dialog id="htmlDialog">
+		<p>This is a dialog</p>
+		<button id="dialogClose" autofocus>Close</button>
+		<!-- Close model-->
+		<!-- <form method="dialog">-->
 		<!--
-		<form method="dialog">
-			<button>OK</button>
+		<form>
+			<input type="text"/>
+			<button type="submit" formmethod="dialog">Cancel</button>
+			<button type="submit">Submit</button>
 		</form>
 		-->
 	</dialog>
+
+	<dialog id="htmlDialogModal">
+		<p>This is a modal dialog</p>
+		<button id="dialogModalClose" autofocus>Close</button>
+	</dialog>
+
+	<script>
+		const showButtonDialog = document.getElementById("dialogOpen");
+		const showButtonDialogModal = document.getElementById("dialogModalOpen");
+		const closeButtonDialog = document.getElementById("dialogClose");
+		const closeButtonDialogModal = document.getElementById("dialogModalClose");
+		const dialog = document.getElementById("htmlDialog")
+		const dialogModal = document.getElementById("htmlDialogModal")
+
+		// "Show the Dialog" button opens the dialog
+		showButtonDialog.addEventListener("click", () => {
+			dialog.show() // Opens a non-modal dialog
+		});
+
+		// "Show the Modal" button opens the dialog modally
+		showButtonDialogModal.addEventListener("click", () => {
+			dialogModal.showModal();
+		});
+		// "Close" button closes the dialog
+		closeButtonDialog.addEventListener("click", () => {
+			dialog.close() // Closes the dialog
+		});
+		// "Close" button closes the dialog modal
+		closeButtonDialogModal.addEventListener("click", () => {
+			dialogModal.close() // Closes the dialog
+		});
+
+		// Close On Outside Click of Dialog Modal
+		dialogModal.addEventListener("click", e => {
+		const dialogDimensions = dialogModal.getBoundingClientRect()
+			if (
+				e.clientX < dialogDimensions.left ||
+				e.clientX > dialogDimensions.right ||
+				e.clientY < dialogDimensions.top ||
+				e.clientY > dialogDimensions.bottom
+			) {
+				dialogModal.close()
+			}
+		})
+	</script>
 </body>
 </html>
